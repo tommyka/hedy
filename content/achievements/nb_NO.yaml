@@ -120,8 +120,8 @@ achievements:
         title: Klar, Ferdig, Lær!
         text: Opprett en klasse
     ring_the_bell:
-        title: Ring the Bell
-        text: Finish the teacher tutorial
+        title: Ring med klokken
+        text: Ferdigjør lære tutorialen
     sharing_is_caring:
         title: Å dele er å bry seg
         text: Del et lagret program
@@ -135,5 +135,5 @@ achievements:
         title: Pass på!
         text: Lag et program som gir en (ikke-tom) advarsel
     well_begun_is_half_done:
-        title: Well begun is half done
-        text: Finish the Hedy tutorial
+        title: Godt begyndt er halveis ferdig
+        text: Gjør ferdig Hedy tutorialen

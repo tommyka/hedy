@@ -355,13 +355,8 @@
     demo_code: |-
         navn = 'Hedy'
         {print}('Mitt navn er ', navn)
--   name: '{print} with var'
-    explanation: With `{print}` you need to use parentheses and commas if you {print} more items
+-   name: spør om noe med {input}
+    explanation: Bruk `{input}` istedet for `{ask}` for å spør om noe
     demo_code: |-
-        name = 'Hedy'
-        {print}('my name is ', name)
--   name: ask something with {input}
-    explanation: Use `{input}` instead of `{ask}` to ask something
-    demo_code: |-
-        name = {input}('What is your name?')
-        {print}('So your name is ', name)
+        navn = {input}('Hva hetter du?')
+        {print}('Så du hetter ', name)

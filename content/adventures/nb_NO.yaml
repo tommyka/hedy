@@ -241,71 +241,71 @@ adventures:
                 start_code: '# skriv koden din her'
             18:
                 story_text: |
-                    We are going to print another story, but now we have to use brackets with `{print}`.
+                    Vi skal skrive en annen historie, men denne gang skal vi bruke parenteser med `{print}`.
 
-                    ### Exercise 1
-                    Create a story of at least 5 sentences. You don't have to use 'name' just yet.
+                    ### Oppgave 1
+                    Lag en historie på minimum 5 setninger. Du trenger ikke at bruke 'name' ennå.
                 example_code: |
                     ```
-                    {print}('Welcome to this story!')
+                    {print}('Velkommen til denne historie!')
                     ```
                 story_text_2: |
-                    ### Exercise 2
-                    We have already prepared an `{input}` for you. First, use the `name` variable in your story.
-                    Then add a second `{ask}` and use that variable as well.
-                    Tip: Remember the commas in a `{print}` between text and variables!
+                    ### Oppgave 2
+                    Vi har allerede gjort en `{input}` klar for deg. Start med å bruke `name` variablen i din historie.
+                    Så legg til en til `{ask}` og bruke også den variable.
+                    Tips: Husk at der skal være komma mellom teksten og variablene i `{print}`!
                 example_code_2: |
                     ```
-                    naam = {input}("What's your name?")
-                    {print}('Welcome to this story!')
+                    navn = {input}("Hva hetter du?")
+                    {print}('Velkommen til denne historie!')
                     ```
-                start_code: '# Schrijf jouw code hier'
+                start_code: '# Skriv din kode her'
     add_remove_command:
         name: '{add} {to} & {remove} {from}'
-        default_save_name: add_remove_command
-        description: introducing add to and remove from
+        default_save_name: tilføy_og_fjern
+        description: Legg til og fjern fra
         levels:
             3:
                 story_text: |
-                    ## Add to
-                    You can add items to the list with the `{add} {to}` command. To add an item to a list you can simply type: `{add} penguin {to} animals` or you can use the `{ask}` command like in the example code.
+                    ## Legg til
+                    Do kan legge til ting til en liste med `{add} {to}` kommandoen. For å legge en ting til en liste kan du skrive `{add} pingvin {to} dyr` eller så kan du bruke `{ask}` kommandoen som i eksempel koden.
                 example_code: |
                     ```
-                    animals {is} dog, cat, kangaroo
-                    like {is} {ask} What is your favorite animal?
-                    {add} like {to_list} animals
-                    {print} I choose animals {at} {random}
+                    dyr {is} hund, kat, kenguru
+                    liker {is} {ask} Hva er ditt favoritt dyr?
+                    {add} liker {to_list} dyr
+                    {print} Jeg velger dyr {at} {random}
                     ```
                 story_text_2: |
-                    ## Remove from
-                    If you can add items to a list, of course you can also take them off. This is done with the `{remove} {from}` command.
+                    ## Fjern fra
+                    Hvis du kan legge ting til en liste, så kan du selvfølgeli fjerne dem. Dette er gjort med `{remove} {from}` kommandoen.
                 example_code_2: |
                     ```
-                    animals {is} dog, cat, kangaroo
-                    dislike {is} {ask} What animal do you not like?
-                    {remove} dislike {from} animals
-                    {print} I choose animals {at} {random}
+                    dyr {is} hund, kat, kenguru
+                    misliker {is} {ask} Hvilket dyr liker du ikke?
+                    {remove} misliker {from} dyr
+                    {print} Jeg velger dyr {at} {random}
                     ```
                 story_text_3: |
-                    ### Exercise
-                    Try out the new commands in this virtual restaurant. Add the flavor the player is hpoing for to the list and remove the flavors they are allergic to.
+                    ### Øvelse
+                    Prøve den nye kommandoen i denne virtuelle resturant. Legg til den smaken som spilleren ønsker seg til listen og fjern de som de er allergiske overfor.
                 example_code_3: |
                     ```
-                    {print} Mystery milkshake
-                    flavors {is} strawberry, chocolate, vanilla
-                    hope {is} {ask} What flavor are you hoping for?
+                    {print} Mysterie milkshake
+                    smaker {is} strawberry, chocolate, vanilla
+                    ønske {is} {ask} Hvilken smake ønsker du deg?
                     _
-                    allergies {is} {ask} Are you allergic to any flavors?
+                    allergier {is} {ask} Er du allergisk overfor noen av smakene?
                     _
-                    {print} You get a flavors {at} {random} milkshake
+                    {print} Du får en smaker {at} {random} milkshake
                     ```
                 start_code: |-
-                    animals {is} dog, cat, kangaroo
-                    like {is} {ask} What is your favorite animal?
-                    {add} like {to_list} animals
-                    dislike {is} {ask} What animal do you not like?
-                    {remove} dislike {from} animals
-                    {print} I choose animals {at} {random}
+                    dyr {is} hund, kat, kenguru
+                    liker {is} {ask} Hva er ditt favoritt dyr?
+                    {add} liker {to_list} dyr
+                    misliker {is} {ask} Hvilket dyr liker du ikke?
+                    {remove} misliker {from} dyr
+                    {print} Jeg velger dyr {at} {random}
     and_or_command:
         name: '{and} & {or}'
         default_save_name: and or
